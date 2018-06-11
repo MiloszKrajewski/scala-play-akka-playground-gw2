@@ -1,12 +1,12 @@
 # Summary
 
-Project uses Scala, Play & Akka. My Scala skills are quite rust and I never used Play before,
-so it forced me to do some research while coding, and as in this case patterns are not engraved in my brain,
+Project uses Scala, Play & Akka. My Scala skills are quite rusty and I never used Play before,
+so it forced me to do some research while coding, and as in this case patterns are not engraved in my brain, 
 I guess there is a lot of non idiomatic solutions.
 
 ## Execute
 
-```
+```bash
 sbt compile
 sbt test
 sbt run
