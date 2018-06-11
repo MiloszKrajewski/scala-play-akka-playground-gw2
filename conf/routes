@@ -1,0 +1,8 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+POST    /api/offer                  controllers.OfferController.create
+GET     /api/offer                  controllers.OfferController.list(all: Option[Boolean])
+GET     /api/offer/:id              controllers.OfferController.read(id: java.util.UUID)
+PATCH   /api/offer/:id/cancel       controllers.OfferController.cancel(id: java.util.UUID)

@@ -1,0 +1,24 @@
+@host = http://localhost:9000
+@id = 8eb79a74-8e1c-4772-bac1-49a4aff449ea
+
+### Create
+POST {{host}}/api/offer
+Content-Type: application/json
+
+{
+    "description": "description from json",
+    "price": { "amount": 12543.8, "currency": "USD" },
+    "expiration": "2019-01-01"
+}
+
+### List
+GET {{host}}/api/offer
+
+### List (exclude expired)
+GET {{host}}/api/offer?all=false
+
+### Get
+GET {{host}}/api/offer/{{id}}
+
+### Cancel
+PATCH {{host}}/api/offer/{{id}}/cancel
